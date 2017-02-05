@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class GrantApplicationTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  should validate_presence_of(:amount)
+  should validate_presence_of(:description)
+  should validate_presence_of(:name)
+  should validate_presence_of(:postcode)
 end
