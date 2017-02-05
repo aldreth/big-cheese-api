@@ -4,7 +4,7 @@ module Admin
     def index
       @grant_applications = GrantApplication.all
 
-      render json: @grant_applications
+      render json: @grant_applications.order(created_at: :desc)
     end
   end
 end
